@@ -15,7 +15,7 @@ function SQLConnnect(sql,arr,callback){
             return;
         }
         connection.query(sql,arr,(err,result) =>{
-            // 释放连接
+            // 釋放連接
             connection.release();
             if(err){
                 console.log(err);
