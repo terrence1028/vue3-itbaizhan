@@ -2,19 +2,19 @@
     <div class="card">
         <div class="box">
             <el-icon class="box-icon" style="color:#40c9c6"><Notification /></el-icon>
-            <span class="box-title">隧道数量：1000个</span>
+            <span class="box-title">隧道數量：1000個</span>
         </div>
         <div class="box">
             <el-icon class="box-icon" style="color:#36a3f7"><Compass /></el-icon>
-            <span class="box-title">检验合格：805个</span>
+            <span class="box-title">檢驗合格：805個</span>
         </div>
         <div class="box">
             <el-icon class="box-icon" style="color:#f4516c"><Bell /></el-icon>
-            <span class="box-title">正在施工：302个</span>
+            <span class="box-title">正在施工：302個</span>
         </div>
         <div class="box">
             <el-icon class="box-icon" style="color:#34bfa3"><Odometer /></el-icon>
-            <span class="box-title">地址预报：5000个</span>
+            <span class="box-title">地址預報：5000個</span>
         </div>
     </div>
     <div class="line" id="line"></div>
