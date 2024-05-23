@@ -2,37 +2,37 @@ module.exports = {
     menus: [
         {
             path: "/",
-            name: "首页",
+            name: "首頁",
             icon: "Document"
         },
         {
             path: "/project",
-            name: "项目基础信息",
+            name: "項目基礎信息",
             icon: "Discount"
         },
         {
             path: "/tunnel",
-            name: "隧道设计信息",
+            name: "隧道設計信息",
             icon: "Picture"
         },
         {
             path: "/build",
-            name: "施工监控检测",
+            name: "施工監控檢測",
             icon: "Filter",
             children:[
                 {
                     path:"/plan",
-                    name:"检测计划"
+                    name:"檢測計劃"
                 },
                 {
                     path:"/section",
-                    name:"切面检测"
+                    name:"切面檢測"
                 }
             ]
         },
         {
             path: "/geological",
-            name: "超前地质预报",
+            name: "超前地質預報",
             icon: "ShoppingTrolley"
         },
         {
