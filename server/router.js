@@ -296,7 +296,7 @@ router.get("/tunnel/list", (req, res) => {
 });
 
 /**
- * 隧道设计信息 tree列表 二级
+ * 隧道設计信息 tree列表 二级
  */
 router.get("/tunnel/list/child", (req, res) => {
   const cid = url.parse(req.url, true).query.cid;
@@ -317,7 +317,7 @@ router.get("/tunnel/list/child", (req, res) => {
 });
 
 /**
- * 隧道设计信息 内容
+ * 隧道設计信息 内容
  */
 router.get("/tunnel/content", (req, res) => {
   const content = url.parse(req.url, true).query.content;
@@ -372,7 +372,7 @@ router.post("/upload", upload.single("file"), function (req, res, next) {
 });
 
 /**
- * 更新隧道设计信息-content-url
+ * 更新隧道設计信息-content-url
  */
 router.get("/tunnel/content/url", (req, res) => {
   // id  url
@@ -395,7 +395,7 @@ router.get("/tunnel/content/url", (req, res) => {
 });
 
 /**
- * PDF预览
+ * PDF預覽
  */
 router.get("/tunnel/pdf", (req, res) => {
   const id = url.parse(req.url, true).query.id;
@@ -506,7 +506,7 @@ router.get("/user/del", (req, res) => {
 });
 
 /**
- * 用户预更新
+ * 用户預更新
  */
 router.get("/user/preview", (req, res) => {
   const id = url.parse(req.url, true).query.id;
@@ -551,7 +551,7 @@ router.get("/user/update", (req, res) => {
 });
 
 /**
- * 用户预更新
+ * 用户預更新
  */
 router.get("/user/preview", (req, res) => {
   const id = url.parse(req.url, true).query.id;
