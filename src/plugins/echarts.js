@@ -5,17 +5,17 @@ import * as echarts from "echarts"
 import china from "../assets/json/china.json"
 
 export default {
-    /* echarts挂载到Vue全局 */
+    /* echarts掛載到Vue全局 */
     install: app => {
         app.config.globalProperties.$line = (element, data) => {
-            // 加载 ecahrts 图标
+            // 加載 ecahrts 圖標
             var myChart = echarts.init(document.getElementById(element))
             const option = {
                 tooltip: {
                     trigger: 'axis'
                 },
                 legend: {
-                    data: ['隧道增加数量', '地质预测数量']
+                    data: ['隧道增加數量', '地質預測數量']
                 },
                 grid: {
                     left: '3%',
@@ -150,13 +150,13 @@ export default {
         },
         app.config.globalProperties.$china = (element,data) =>{
             var myChart = echarts.init(document.getElementById(element))
-            // 注册地图
+            // 注冊地圖
             echarts.registerMap("china",china)
             const option = {
                 // 鼠标点击弹窗
                 tooltip:{
-                    triggerOn:"click", // 点击触发
-                    enterable:true  // 是否出现弹框
+                    triggerOn:"click", // 點擊觸發
+                    enterable:true  // 是否出現彈框
                 },
                 visualMap:{
                     origin:"vertical",
@@ -174,10 +174,10 @@ export default {
                     name:"中国地图",
                     type:"map",
                     map:"china",
-                    roam:false, // 鼠标滚轮是否可以缩放
-                    zoom:1.2, // 默认地图的倍数
+                    roam:false, // 鼠标滚輪是否可以缩放
+                    zoom:1.2, // 默認地圖的倍數
                     label:{
-                        show:true, // 是否显示地图上的文本信息
+                        show:true, // 是否顯示地圖上的文本信息
                         fontSize:8
                     },
                     itemStyle:{
