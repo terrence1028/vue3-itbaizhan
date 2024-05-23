@@ -4,22 +4,22 @@ import qs from "querystring"
 const errorHandle = (status,info) =>{
     switch(status){
         case 400:
-            console.log("语义错误");
+            console.log("語義錯誤");
             break;
         case 401:
-            console.log("服务器认证失败");
+            console.log("服務器認證失敗");
             break;
         case 403:
-            console.log("服务器请求拒绝执行");
+            console.log("服務器請求拒絕執行");
             break;
         case 404:
-            console.log("请检查网路请求地址");
+            console.log("請撿查網絡地址");
             break;
         case 500:
-            console.log("服务器发生意外");
+            console.log("服務器發生意外");
             break;
         case 502:
-            console.log("服务器无响应");
+            console.log("服務器無響應");
             break;
         default:
             console.log(info);
@@ -27,7 +27,7 @@ const errorHandle = (status,info) =>{
     }
 }
 /**
- * 创建Axios对象
+ * 創建Axios对象
  */
 const instance = axios.create({
     timeout:5000
@@ -49,7 +49,7 @@ instance.interceptors.response.use(
         if(response){
             errorHandle(response.status,response.info)
         }else{
-            console.log("网络请求被中断了");
+            console.log("網絡請求被中斷了");
         }
     }
 )
