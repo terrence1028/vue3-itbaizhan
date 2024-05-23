@@ -3,13 +3,13 @@ import base from "./base.js"
 
 const api = {
     /**
-     * 登录
+     * 登錄
      */
     getLogin(params) {
         return axios.post(base.baseUrl + base.login, params)
     },
     /**
-     * 用户权限
+     * 用户權限
      */
     getRouter(params) {
         return axios.get(base.baseUrl + base.router, {
@@ -17,13 +17,13 @@ const api = {
         })
     },
     /**
-     * 获取line图表数据
+     * 取得line圖表數據
      */
     getLine() {
         return axios.get(base.baseUrl + base.line)
     },
     /**
-     * 读取隧道信息
+     * 讀取隧道資訊
      */
     projectInfo(params) {
         return axios.get(base.baseUrl + base.projectInfo,{
@@ -31,7 +31,7 @@ const api = {
         })
     },
     /**
-     * 模糊查询
+     * 模糊查詢
      */
     getSearch(params){
         return axios.get(base.baseUrl + base.search,{
@@ -39,7 +39,7 @@ const api = {
         })
     },
     /**
-     * 获取数据总条数
+     * 取得資料總條數
      */
     getTotal(){
         return axios.get(base.baseUrl + base.total)
@@ -61,7 +61,7 @@ const api = {
         })
     },
     /**
-     * 隧道预更新
+     * 隧道預更新
      */
     getPreProject(params){
         return axios.get(base.baseUrl + base.preProject,{
@@ -75,13 +75,13 @@ const api = {
         return axios.put(base.baseUrl + base.updateProject + id,params)
     },
     /**
-     * 隧道设计信息-tree-一级
+     * 隧道設計信息-tree-一级
      */
     getTunnelList(){
         return axios.get(base.baseUrl + base.tunnelList)
     },
     /**
-     * 隧道设计信息-tree-二级
+     * 隧道設計信息-tree-二级
      */
     getTunnelListChild(params){
         return axios.get(base.baseUrl + base.tunnelListChild,{
@@ -89,7 +89,7 @@ const api = {
         })
     },
     /**
-     * 隧道设计信息-content
+     * 隧道設計信息-content
      */
     getTunnelContent(params){
         return axios.get(base.baseUrl + base.tunnelContent,{
@@ -97,7 +97,7 @@ const api = {
         })
     },
     /**
-     * 隧道设计信息-content-上传
+     * 隧道設計信息-content-上传
      */
     getUploadTunnelContent(params){
         return axios.get(base.baseUrl + base.uploadTunnelContent,{
@@ -105,7 +105,7 @@ const api = {
         })
     },
     /**
-     * PDF预览
+     * PDF預覽
      */
     getPdfPreView(params){
         return axios.get(base.baseUrl + base.pdfPreView,{
@@ -113,7 +113,7 @@ const api = {
         })
     },
     /**
-     * 获取用户列表
+     * 取得用户列表
      */
     getUserList(){
         return axios.get(base.baseUrl + base.userList)
@@ -143,7 +143,7 @@ const api = {
         })
     },
     /**
-     * 用户预更新
+     * 用户預更新
      */
     getPreViewUser(params){
         return axios.get(base.baseUrl + base.preViewUser,{
