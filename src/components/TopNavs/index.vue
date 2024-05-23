@@ -62,7 +62,7 @@ const menuStore = useMenuStore()
  * 退出登录按钮
  */
 const logoutHandler = () =>{
-    // 存储信息清空 并且 回到登录页
+    // 存儲信息清空 并且 回到登錄頁面
     loginStore.token = ""
     loginStore.permission = ""
     loginStore.username = ""
