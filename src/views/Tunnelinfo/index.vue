@@ -6,10 +6,10 @@
         </div>
         <div class="tunnel-content">
             <el-table :data="tunnelContent.data" style="width: 100%">
-                <el-table-column label="序号" prop="id"></el-table-column>
-                <el-table-column label="隧道名称" prop="tunnelname"></el-table-column>
-                <el-table-column label="图名" prop="imagename"></el-table-column>
-                <el-table-column label="图号" prop="num"></el-table-column>
+                <el-table-column label="序號" prop="id"></el-table-column>
+                <el-table-column label="隧道名稱" prop="tunnelname"></el-table-column>
+                <el-table-column label="圖名" prop="imagename"></el-table-column>
+                <el-table-column label="圖號" prop="num"></el-table-column>
                 <el-table-column label="操作">
                     <template #default="scope">
                         <el-button size="small" type="danger" @click="preViewHandler(scope.$index, scope.row)">預覽
